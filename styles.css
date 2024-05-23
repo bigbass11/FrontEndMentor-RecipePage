@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: tan;
+    background-color: rgb(248, 231, 208);
 }
 
 .content-area {
@@ -21,11 +21,11 @@ body {
 }
 
 .content-area > *:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .content-area h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #final-result {
@@ -44,9 +44,32 @@ h3 {
 }
 
 li:not(:last-child) {
-    margin-bottom: 5px; /* Adds spacing between list items except the last one */
+    margin-bottom: 15px; /* Adds spacing between list items except the last one */
 }
 
 .bold {
     font-weight: bold;
+}
+
+.prep-time {
+    padding: 1.5vw;
+    border-radius: 1vw;
+    background-color: rgb(255, 238, 255);
+}
+
+.prep-time > h2 {
+    color: rgb(139, 0, 139);
+}
+
+ul, ol {
+    list-style-position: inside;
+
+}
+
+li::marker {
+    color: brown;
+}
+
+ol>li::marker {
+    margin: 5px;
 }
