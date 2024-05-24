@@ -5,6 +5,8 @@
     font-family: Arial, sans-serif; /* Set a global font-family */
 }
 
+
+
 body {
     display: flex;
     justify-content: center;
@@ -62,8 +64,8 @@ li:not(:last-child) {
 }
 
 ul, ol {
-    list-style-position: inside;
-
+    list-style-position: outside;
+    padding-left: 2.5%;
 }
 
 li::marker {
