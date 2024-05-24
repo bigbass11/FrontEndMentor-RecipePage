@@ -77,7 +77,32 @@ ol>li::marker {
 }
 
 hr {
-    border: 0.5px solid rgb(221, 221, 221);
+    border: 0.5px solid #ddd;
     width: 100%;
 }
 
+.nutrition > p {
+    margin-bottom: 20px;
+}
+
+.nutrition-table {
+    border-collapse: collapse;
+}
+
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrition-table td {
+    padding: 10px;
+}
+
+.nutrition-table .value {
+    font-weight: bold;
+    padding-left: 150%;
+    color: #8B4513; /* Brown color */
+}
+
+.nutrition-table .type {
+    padding-left: 25px; /* Brown color */
+}
