@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('assets/fonts/YoungSerif-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
@@ -19,7 +24,7 @@ body {
 
 .content-area {
     background-color: white;
-    width: 50vw;
+    width: 60vw;
     margin: 5vh auto;
     border-radius: 1vw;
     padding: 2.5%;
@@ -72,7 +77,8 @@ ul, ol {
 }
 
 li::marker {
-    color: brown;
+    color: rgb(153, 73, 8);
+    font-weight: bold;
 }
 
 ol>li::marker {
@@ -107,7 +113,7 @@ hr {
 
 .nutrition-table .value {
     font-weight: bold;
-    color: #8B4513; /* Brown color */
+    color: rgb(153, 73, 8); /* Brown color */
 }
 
 
@@ -122,5 +128,7 @@ hr {
 }
 
 .content-area h3 {
-    color: rgb(190, 99, 24);
+    color: rgb(153, 73, 8);
+    font-family: 'YoungSerif', Arial, sans-serif;
+    font-weight: lighter;
 }
