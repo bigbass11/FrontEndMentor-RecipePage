@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-bg-color: rgb(248, 231, 208);
+    --main-font-color: rgb(153, 73, 8);
+    --accent-font-family: 'YoungSerif', Arial, sans-serif;
+}
+
 /* Importing Fonts */
 @font-face {
     font-family: 'Outfit';
@@ -20,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(248, 231, 208);
+    background-color: var(--main-bg-color);
     font-family: 'Outfit', Arial, sans-serif;
 }
 
@@ -79,7 +85,7 @@ ul, ol {
 }
 
 li::marker {
-    color: rgb(153, 73, 8);
+    color: var(--main-font-color);
     font-weight: bold;
 }
 
@@ -115,7 +121,7 @@ hr {
 
 .nutrition-table .value {
     font-weight: bold;
-    color: rgb(153, 73, 8); /* Brown color */
+    color: var(--main-font-color); /* Brown color */
 }
 
 
@@ -134,14 +140,11 @@ hr {
     }
 }
 
-main h3 {
-    color: rgb(153, 73, 8);
-    font-family: 'YoungSerif', Arial, sans-serif;
+main h3,h1 {
+    font-family: var(--accent-font-family);
     font-weight: lighter;
 }
 
-main h1 {
-    /* color: rgb(153, 73, 8); */
-    font-family: 'YoungSerif', Arial, sans-serif;
-    font-weight: lighter;
+main h3 {
+    color: rgb(153, 73, 8);
 }
