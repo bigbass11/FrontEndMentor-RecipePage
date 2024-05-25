@@ -22,7 +22,7 @@ body {
     font-family: 'Outfit', Arial, sans-serif;
 }
 
-.content-area {
+main {
     background-color: white;
     width: 60vw;
     margin: 5vh auto;
@@ -30,11 +30,11 @@ body {
     padding: 2.5%;
 }
 
-.content-area > *:not(:last-child) {
+main > *:not(:last-child) {
     margin-bottom: 30px;
 }
 
-.content-area h1, h2, h3, h4, h5, h6 {
+main h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
@@ -118,7 +118,7 @@ hr {
 
 
 @media (max-width: 768px) {
-    .content-area {
+    main {
         /* background-color: white; */
         width: 100vw;
         margin: 0;
@@ -127,7 +127,7 @@ hr {
     }
 }
 
-.content-area h3 {
+main h3 {
     color: rgb(153, 73, 8);
     font-family: 'YoungSerif', Arial, sans-serif;
     font-weight: lighter;
