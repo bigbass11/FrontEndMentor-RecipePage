@@ -1,3 +1,11 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing Fonts */
 @font-face {
     font-family: 'Outfit';
     src: url('assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
@@ -6,12 +14,6 @@
 @font-face {
     font-family: 'YoungSerif';
     src: url('assets/fonts/YoungSerif-Regular.ttf') format('truetype');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -25,9 +27,9 @@ body {
 main {
     background-color: white;
     width: 60vw;
-    margin: 5vh auto;
+    margin: 40px auto;
     border-radius: 1vw;
-    padding: 2.5%;
+    padding: 40px;
 }
 
 main > *:not(:last-child) {
@@ -122,13 +124,24 @@ hr {
         /* background-color: white; */
         width: 100vw;
         margin: 0;
-        border-radius: 1vw;
-        padding: 5%;
+        padding-top: 0;
+    }
+    #final-result {
+        border-radius: 0px;
+        margin-left: -40px;
+        margin-right: -40px;
+        width: 100vw;
     }
 }
 
 main h3 {
     color: rgb(153, 73, 8);
+    font-family: 'YoungSerif', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+main h1 {
+    /* color: rgb(153, 73, 8); */
     font-family: 'YoungSerif', Arial, sans-serif;
     font-weight: lighter;
 }
