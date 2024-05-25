@@ -2,16 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Set a global font-family */
 }
 
-
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+}
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(248, 231, 208);
+    font-family: 'Outfit', Arial, sans-serif;
 }
 
 .content-area {
@@ -89,7 +92,6 @@ hr {
     margin-bottom: 20px;
 }
 
-
 .nutrition-table {
     border-collapse: collapse;
     width: 100%;
@@ -97,6 +99,10 @@ hr {
 
 .nutrition-table tr:not(:last-child) {
     border-bottom: 1px solid #ddd;
+}
+
+.nutrition-table tr td {
+    padding: 10px 10px 10px 20px;
 }
 
 .nutrition-table .value {
