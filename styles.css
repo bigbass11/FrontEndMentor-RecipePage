@@ -32,6 +32,7 @@ body {
     align-items: center;
     background-color: var(--main-bg-color);
     font-family: 'Outfit', Arial, sans-serif;
+    color: rgb(87, 87, 87);
 }
 
 main {
@@ -58,6 +59,10 @@ main h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
 }
 
+/* h1 {
+    color: black;
+} */
+
 h2 {
     font-size: 1.17rem;
 }
@@ -75,7 +80,7 @@ li:not(:last-child) {
 }
 
 .prep-time {
-    padding: 20px;
+    padding: 25px 20px;
     border-radius: 15px;
     background-color: rgb(255, 238, 255);
 }
