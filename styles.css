@@ -1,3 +1,12 @@
+/* Variables */
+:root {
+    --main-bg-color: rgb(248, 231, 208);
+    --main-font-color: rgb(153, 73, 8);
+    --accent-font-family: 'YoungSerif', Arial, sans-serif;
+    /* Ensures that omlette picture has negative margins equal to padding of <main> */
+    --main-area-padding: 40px; 
+}
+
 /* Base Styles */
 * {
     margin: 0;
@@ -5,18 +14,13 @@
     box-sizing: border-box;
 }
 
-:root {
-    --main-bg-color: rgb(248, 231, 208);
-    --main-font-color: rgb(153, 73, 8);
-    --accent-font-family: 'YoungSerif', Arial, sans-serif;
-}
-
-/* Importing Fonts */
+/* Main Font */
 @font-face {
     font-family: 'Outfit';
     src: url('assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
 }
 
+/* Accent Font */
 @font-face {
     font-family: 'YoungSerif';
     src: url('assets/fonts/YoungSerif-Regular.ttf') format('truetype');
@@ -33,11 +37,12 @@ body {
 main {
     background-color: white;
     width: 60vw;
-    margin: 40px auto;
-    border-radius: 1vw;
-    padding: 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    padding: var(--main-area-padding);
 }
 
+/* Adds marging between all of the <section>s */
 main > *:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -134,8 +139,8 @@ hr {
     }
     #final-result {
         border-radius: 0px;
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: calc(-1*var(--main-area-padding));
+        margin-right: calc(-1*var(--main-area-padding));
         width: 100vw;
     }
 }
